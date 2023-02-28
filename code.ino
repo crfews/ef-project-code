@@ -1,5 +1,6 @@
 /* T-2-5
- * Date Last Modified: 2023/02/23
+ * Date Last Modified: 2023/02/28
+ * Code Description - the code powers a string of LEDs dependent on whether a ball tilt sensor is triggered
  */
 
 /* ledPin - pin the LED is connected to
@@ -51,6 +52,7 @@ void loop() {
       }
     }
   }
+  /* write the value to the LEDs*/
   digitalWrite(ledPin, sensorValue);
   lastTiltState = sensorValue;
 }
